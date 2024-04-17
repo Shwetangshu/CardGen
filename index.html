@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Info (Demo)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card-container">
+    <h3 class="card-title">Credit Card Information</h3>
+    <select id="card-type-select">
+      <option value="visa16">Visa (16 digits)</option>
+      <option value="visa13">Visa (13 digits)</option>
+      <option value="mc">MasterCard</option>
+      <option value="discover">Discover</option>
+      <option value="amex">American Express</option>
+    </select>
+    <button id="generate-btn">Generate New Card</button>
+    <ul class="card-info">
+      <li>Card Type: <span id="card-type"></span></li>
+      <li>Card Number: <span id="card-number"></span></li>
+      <li>CVV: <span id="cvv"></span></li>
+      <li>Expiration Date: <span id="expiration-date"></span></li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
